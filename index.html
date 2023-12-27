@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez7GEKBMaCCG5AIAPXGNiZcA1MUq2C2s4Dwl5sOmYgsPc4FGEpPb3MR8BIW4L1/t" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- == icon == -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- == css == -->
+    <link rel="stylesheet" href="style.css" />
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #3EFFF4;
+	font-size: 55px;
+}
+
+
+body {
+    min-height: 100vh;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    padding: 12% 0;
+}
+
+.card {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+    
+   
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card_title {
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    font-weight: normal;
+    font-size: 96px;
+}
+
+.pricing .small {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 70px;
+}
+
+.features {
+    margin: 40px 0;
+    list-style-position: inside;
+}
+
+.features li {
+    padding-bottom: 10px;
+}
+
+a.cta_btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: rgba(21, 23, 24, 0.7);
+    border-radius: 29px;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: background .3s ease;
+}
+
+a.cta_btn:hover {
+    background: #000;
+}
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -99px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+}
+footer a {
+    margin: 0 10px;
+}
+
+.contact-section,
+.social-icons {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.contact-section h2,
+.social-icons h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.contact-section p {
+    color: #ddd;
+}
+
+.contact-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 1em;
+    color: #ddd;
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+        padding-bottom: 25%;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .card_title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .pricing {
+        font-size: 52px;
+    }
+
+    hr {
+        margin-top: 50px;
+    }
+
+    a.cta_btn {
+        font-size: 11px;
+    }
+
+}
+</style>
+</head>
+<body>
+<header>
+   
+    <h1>Our Pricing Plans</h1>
+</header>
+
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h2 class="card_title">Basic</h2>
+            <p class="pricing">20$<span class="small">/per month</span></p>
+            <p>Save $9</p>
+            <hr>
+            <ul class="features">
+                <li>One account</li>
+                <li>Unlimited songs</li>
+                <li>Customized playlist</li>
+                <li>1GB Storage Space</li>
+                <li>Download up to 1 File at a Time</li>
+                <li>View/Share Files in Browser</li>
+                <li>No Collaboration Features</li>
+            </ul>
+            <a href="#" class="cta_btn">Buy Now</a>
+        </div>
+        <div class="card">
+            <h2 class="card_title">Premimum</h2>
+            <p class="pricing">39$<span class="small">/per month</span></p>
+            <p>Save $15</p>
+            <hr>
+            <ul class="features">
+                <li>One account</li>
+                <li>Unlimited songs</li>
+                <li>Customized playlist</li>
+                <li>5GB Storage Space</li>
+                <li>Download up to 5 File at a Time</li>
+                <li>View/Share Files in Browser</li>
+                <li>Collaboration Features is upto 5 devices</li>
+            </ul>
+             <a href="#" class="cta_btn">Buy Now</a>
+        </div>
+        <div class="card">
+            <h2 class="card_title">Ultimate</h2>
+            <p class="pricing">60$<span class="small">/per month</span></p>
+            <p>Save $25</p>
+            <hr>
+            <ul class="features">
+                <li>Six account</li>
+                <li>Unlimited songs</li>
+                <li>Customized playlist</li>
+                <li>Unlimited Storage Space</li>
+                <li>Upload and Download any file</li>
+                <li>Access files from anywhere</li>
+                <li>Collaborate with multiple users</li>
+            </ul>
+             <a href="#" class="cta_btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer>
+    <p>&copy; 2023 MotionCut.</p>
+                <p> All rights reserved.</p>
+</footer>
+<footer>
+    <div class="footer-container">
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For inquiries, reach out to us:</p>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+       
+
+        <div class="social-icons">
+            <h2>Follow Us</h2>
+            <footer>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+               
+            </footer>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
