@@ -28,7 +28,7 @@ Get Ready to Dive In!
 This internship project is an exciting opportunity to apply your skills, learn new techniques, and contribute to the development of a professional pricing landing page for Motion Cut Company. We look forward to seeing your creativity and expertise in action!
 
 Demo
-see live demo here:
+see live demo here: https://mm0190.github.io/MotionCut-Internship-Project/
 
 
 
